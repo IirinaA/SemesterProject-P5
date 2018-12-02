@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,85 +12,175 @@
         <!--main page-->
         <scene sceneID="QVc-GD-oQ4">
             <objects>
-                <viewController title="main page" id="Pwy-Wd-O5S" customClass="ChatTableViewController" customModule="Easy_Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wKd-sI-GLx" customClass="UITableView">
+                <viewController title="main page" modalTransitionStyle="flipHorizontal" id="Pwy-Wd-O5S" customClass="MessagesController" customModule="Easy_Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wKd-sI-GLx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Page 3" highlightedImage="imageView:pWd-yB-Ucp:highlightedImage" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-yB-Ucp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Main Page 3" highlightedImage="imageView:pWd-yB-Ucp:highlightedImage" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-yB-Ucp">
+                                <rect key="frame" x="0.0" y="-8" width="414" height="736"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-XM-M8v">
-                                <rect key="frame" x="35" y="684" width="344" height="33"/>
-                                <color key="backgroundColor" red="0.91206413507461548" green="0.96867996454238892" blue="0.98136812448501587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-kM-70T">
-                                <rect key="frame" x="35" y="280" width="344" height="396"/>
-                                <color key="backgroundColor" red="0.73632961509999995" green="0.89420002700000001" blue="0.92410248520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="344" id="20S-qg-prZ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="344" id="2pf-I6-8dX"/>
-                                    <constraint firstAttribute="height" constant="396" id="Dfl-fS-gUY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkq-Mu-MVo">
-                                <rect key="frame" x="370" y="686" width="44" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="Jii-08-X9o"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="k8t-7z-hn4"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="x48-IH-oyL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                <state key="normal" title="Send">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="565-dh-9iV">
+                                <rect key="frame" x="78" y="424" width="270" height="48"/>
+                                <color key="backgroundColor" red="0.87629777193069458" green="0.9490540623664856" blue="0.96600288152694702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                                <state key="normal" title="Write a new message">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendButton:" destination="Pwy-Wd-O5S" eventType="touchUpInside" id="t1x-oM-qfK"/>
-                                    <action selector="sentButtonTpped:" destination="Pwy-Wd-O5S" eventType="touchUpInside" id="937-FT-F2W"/>
+                                    <action selector="newMessage:" destination="Pwy-Wd-O5S" eventType="touchUpInside" id="t2P-c5-lIb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pko-wL-rMl">
+                                <rect key="frame" x="78" y="507" width="270" height="48"/>
+                                <color key="backgroundColor" red="0.87629777190000002" green="0.94905406240000001" blue="0.96600288150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
+                                <state key="normal" title="View old messages">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wQM-70-ulx" kind="show" id="O8n-7x-ntH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuR-Mx-aFE">
+                                <rect key="frame" x="41" y="44" width="27" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="LGH-SO-PIX"/>
+                                    <constraint firstAttribute="width" constant="27" id="NuW-F5-vL0"/>
+                                </constraints>
+                                <state key="normal" image="Hamburger menu"/>
+                                <connections>
+                                    <action selector="menuButtonPressed:" destination="Pwy-Wd-O5S" eventType="touchUpInside" id="Gah-gN-PcJ"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xOZ-2O-lEb">
+                                <rect key="frame" x="20" y="74" width="209" height="788"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-Zx-PB4">
+                                        <rect key="frame" x="0.0" y="8" width="219" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-ZF-RoI">
+                                        <rect key="frame" x="75" y="686" width="81" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.87629777190000002" green="0.94905406240000001" blue="0.96600288150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="25"/>
+                                        <state key="normal" title="Log out">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOut:" destination="Pwy-Wd-O5S" eventType="touchUpInside" id="FHQ-Pt-StW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59001332520000005" green="0.87454354759999997" blue="0.92573893070000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TgR-Zx-PB4" secondAttribute="trailing" constant="-10" id="KbV-sN-kXB"/>
+                                    <constraint firstItem="TgR-Zx-PB4" firstAttribute="leading" secondItem="xOZ-2O-lEb" secondAttribute="leading" id="h5v-U5-SXC"/>
+                                    <constraint firstItem="TgR-Zx-PB4" firstAttribute="top" secondItem="xOZ-2O-lEb" secondAttribute="topMargin" id="uaR-wQ-CUN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IbE-kM-70T" firstAttribute="top" secondItem="qpP-3w-bAX" secondAttribute="top" constant="236" id="1tm-vV-Kzl"/>
-                            <constraint firstItem="2w2-XM-M8v" firstAttribute="top" secondItem="IbE-kM-70T" secondAttribute="bottom" constant="8" id="25h-1g-BuZ"/>
-                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" id="427-4Z-fSR"/>
-                            <constraint firstItem="Vkq-Mu-MVo" firstAttribute="top" secondItem="IbE-kM-70T" secondAttribute="bottom" constant="10" id="4gD-qt-cJc"/>
-                            <constraint firstItem="IbE-kM-70T" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="35" id="7p8-t5-gBK"/>
-                            <constraint firstItem="2w2-XM-M8v" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="35" id="BiN-4d-u4y"/>
-                            <constraint firstItem="IbE-kM-70T" firstAttribute="centerX" secondItem="qpP-3w-bAX" secondAttribute="centerX" id="IVZ-Bj-Ga5"/>
-                            <constraint firstItem="qpP-3w-bAX" firstAttribute="trailing" secondItem="IbE-kM-70T" secondAttribute="trailing" constant="35" id="KPt-OB-QNH"/>
-                            <constraint firstItem="IbE-kM-70T" firstAttribute="centerX" secondItem="pWd-yB-Ucp" secondAttribute="centerX" id="MtF-at-ZH6"/>
-                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="top" secondItem="wKd-sI-GLx" secondAttribute="top" id="Mym-uc-1RC"/>
-                            <constraint firstItem="Vkq-Mu-MVo" firstAttribute="bottom" secondItem="2w2-XM-M8v" secondAttribute="bottom" id="SFq-Ng-V0T"/>
-                            <constraint firstItem="qpP-3w-bAX" firstAttribute="trailing" secondItem="Vkq-Mu-MVo" secondAttribute="trailing" symbolic="YES" id="hKd-Qt-1GM"/>
-                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="bottom" secondItem="qpP-3w-bAX" secondAttribute="bottom" id="jBh-Kg-4fQ"/>
-                            <constraint firstItem="2w2-XM-M8v" firstAttribute="centerX" secondItem="IbE-kM-70T" secondAttribute="centerX" id="qR7-1u-A0r"/>
-                            <constraint firstItem="IbE-kM-70T" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="35" id="vHB-MK-WIa"/>
-                            <constraint firstItem="Vkq-Mu-MVo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qpP-3w-bAX" secondAttribute="leading" symbolic="YES" id="y3Z-Oq-RkV"/>
-                            <constraint firstItem="qpP-3w-bAX" firstAttribute="trailing" secondItem="IbE-kM-70T" secondAttribute="trailing" constant="35" id="yns-f0-dYC"/>
+                            <constraint firstItem="xOZ-2O-lEb" firstAttribute="top" secondItem="VuR-Mx-aFE" secondAttribute="bottom" constant="23" id="8vF-af-USj"/>
+                            <constraint firstItem="VuR-Mx-aFE" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="41" id="OJz-uE-nao"/>
+                            <constraint firstItem="VuR-Mx-aFE" firstAttribute="top" secondItem="qpP-3w-bAX" secondAttribute="top" id="REj-3j-fuG"/>
+                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="leading" secondItem="wKd-sI-GLx" secondAttribute="leading" id="UoC-Yy-D6q"/>
+                            <constraint firstItem="565-dh-9iV" firstAttribute="leading" secondItem="pko-wL-rMl" secondAttribute="leading" id="a4U-tX-usU"/>
+                            <constraint firstItem="VuR-Mx-aFE" firstAttribute="top" secondItem="qpP-3w-bAX" secondAttribute="top" id="bN4-IF-xDi"/>
+                            <constraint firstItem="565-dh-9iV" firstAttribute="trailing" secondItem="pko-wL-rMl" secondAttribute="trailing" id="bj1-TF-Xpf"/>
+                            <constraint firstItem="qpP-3w-bAX" firstAttribute="trailing" secondItem="VuR-Mx-aFE" secondAttribute="trailing" constant="346" id="byI-8m-JXM"/>
+                            <constraint firstItem="VuR-Mx-aFE" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="41" id="dCk-jE-urb"/>
+                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="top" secondItem="wKd-sI-GLx" secondAttribute="top" id="fP5-NQ-kvi"/>
+                            <constraint firstItem="565-dh-9iV" firstAttribute="leading" secondItem="qpP-3w-bAX" secondAttribute="leading" constant="78" id="m01-JQ-tO2"/>
+                            <constraint firstItem="pko-wL-rMl" firstAttribute="top" secondItem="565-dh-9iV" secondAttribute="bottom" constant="35" id="omy-I1-F5T"/>
+                            <constraint firstItem="qpP-3w-bAX" firstAttribute="trailing" secondItem="xOZ-2O-lEb" secondAttribute="trailing" constant="205" id="q1g-tf-7F5"/>
+                            <constraint firstItem="pWd-yB-Ucp" firstAttribute="leading" secondItem="xOZ-2O-lEb" secondAttribute="leading" id="sNH-JB-pUL"/>
+                            <constraint firstItem="xOZ-2O-lEb" firstAttribute="top" secondItem="VuR-Mx-aFE" secondAttribute="bottom" constant="8" symbolic="YES" id="u5I-nW-D9d"/>
+                            <constraint firstAttribute="bottom" secondItem="xOZ-2O-lEb" secondAttribute="bottom" id="vOX-Is-FeL"/>
+                            <constraint firstItem="565-dh-9iV" firstAttribute="centerY" secondItem="wKd-sI-GLx" secondAttribute="centerY" id="wW1-dz-v0H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qpP-3w-bAX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cw8-H2-4W6"/>
                     <connections>
-                        <outlet property="chatTextView" destination="IbE-kM-70T" id="M0e-BS-3eL"/>
-                        <outlet property="inputTextField" destination="2w2-XM-M8v" id="WE1-K7-abj"/>
+                        <outlet property="menuButton" destination="VuR-Mx-aFE" id="RW2-Tc-4To"/>
+                        <outlet property="menuView" destination="xOZ-2O-lEb" id="OZA-Lp-Nq4"/>
+                        <outlet property="usernameLabel" destination="TgR-Zx-PB4" id="xus-2X-LHl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIk-2F-tcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600.0000000000002" y="13.392857142857142"/>
+            <point key="canvasLocation" x="3272.4637681159425" y="-498.21428571428567"/>
+        </scene>
+        <!--Old Messages-->
+        <scene sceneID="bGw-dU-yvH">
+            <objects>
+                <tableViewController storyboardIdentifier="oldMessages" modalTransitionStyle="flipHorizontal" id="Hat-e8-II2" customClass="OldMessagesController" customModule="Easy_Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ElT-2l-dcg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" hidden="YES" contentMode="scaleToFill" misplaced="YES" id="sSg-h5-55q">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-c3-Pt2">
+                                    <rect key="frame" x="71" y="0.0" width="258" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbM-aY-gbB">
+                                    <rect key="frame" x="20" y="4" width="43" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellId" rowHeight="86" id="fpj-L6-pBQ" customClass="UserCell" customModule="Easy_Now" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="31" width="414" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fpj-L6-pBQ" id="aaL-pj-kjx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hat-e8-II2" id="uIw-04-3Uo"/>
+                            <outlet property="delegate" destination="Hat-e8-II2" id="FC8-4x-GMM"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Old Messages" id="N31-bg-8FG">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Uva-uG-Xj4"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Chat" destination="ElT-2l-dcg" id="nad-Za-gdF"/>
+                        <outlet property="userNameLabel1" destination="bfI-c3-Pt2" id="E39-bT-v9Z"/>
+                        <segue destination="Pwy-Wd-O5S" kind="presentation" id="kM3-s4-4HG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDp-ov-rVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5034.7826086956529" y="249.77678571428569"/>
         </scene>
         <!--Register page-->
         <scene sceneID="UIr-mI-hkj">
             <objects>
                 <viewController title="Register page" id="eZ5-s7-0BJ" customClass="RegisterViewController" customModule="Easy_Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8ni-vm-UOB" customClass="UITableView">
+                    <view key="view" contentMode="scaleToFill" id="8ni-vm-UOB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -99,22 +188,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mty-pl-nEt">
-                                <rect key="frame" x="35" y="258" width="326" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mty-pl-nEt">
+                                <rect key="frame" x="35" y="264" width="323" height="30"/>
                                 <color key="backgroundColor" red="0.59001332521438599" green="0.87454354763031006" blue="0.92573893070220947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="fZQ-zg-rXY"/>
-                                    <constraint firstAttribute="height" constant="30" id="iZN-44-76q"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="323" id="HcE-NR-Doc"/>
+                                    <constraint firstAttribute="height" constant="30" id="l6v-4f-kEb"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="e-mail" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-nj-xz2">
-                                <rect key="frame" x="35" y="308" width="326" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-nj-xz2">
+                                <rect key="frame" x="35" y="314" width="323" height="30"/>
                                 <color key="backgroundColor" red="0.70757883787155151" green="0.90207606554031372" blue="0.93631476163864136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="A1h-HW-yf5"/>
                                     <constraint firstAttribute="height" constant="30" id="Vp8-HD-pBp"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -122,7 +210,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-3F-eJe">
-                                <rect key="frame" x="35" y="358" width="326" height="30"/>
+                                <rect key="frame" x="35" y="364" width="323" height="30"/>
                                 <color key="backgroundColor" red="0.79610359668731689" green="0.92548787593841553" blue="0.95523005723953247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="287" id="O5B-NU-XPH"/>
@@ -132,9 +220,42 @@
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qI-sg-fYl">
+                                <rect key="frame" x="35" y="410" width="323" height="30"/>
+                                <color key="backgroundColor" red="0.79610359669999997" green="0.92548787590000003" blue="0.95523005719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="31r-qr-b1f"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hPM-Oc-xNO"/>
+                                    <constraint firstAttribute="height" constant="30" id="p6H-cO-okr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="323" id="rSu-lM-rLg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osq-Yg-tm3">
+                                <rect key="frame" x="35" y="735" width="102" height="36"/>
+                                <color key="backgroundColor" red="0.87629777190000002" green="0.94905406240000001" blue="0.96600288150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tDy-80-D2A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="Rat-EC-ZaD"/>
+                                    <segue destination="JCi-gy-gYT" kind="presentation" identifier="loginpage" id="OoL-vu-i0x"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgP-15-V6Y">
-                                <rect key="frame" x="132" y="734" width="142" height="36"/>
+                                <rect key="frame" x="269" y="735" width="89" height="36"/>
                                 <color key="backgroundColor" red="0.87629777193069458" green="0.9490540623664856" blue="0.96600288152694702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bKw-jh-gxd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="mX2-Hd-6AD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="xrd-YT-BQt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,89 +264,157 @@
                                     <action selector="registerButton:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="JO3-Qj-fD1"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-mj-ejL">
-                                <rect key="frame" x="35" y="404" width="0.0" height="0.0"/>
-                                <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuF-Xd-mlv">
-                                        <rect key="frame" x="0.0" y="0.0" width="93" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                        <state key="normal" title="Administrator">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJr-ia-tTg">
-                                        <rect key="frame" x="0.0" y="0.0" width="93" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                        <state key="normal" title="Marketing">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-jA-jAg">
-                                <rect key="frame" x="42" y="456" width="81" height="226"/>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <rect key="frame" x="35" y="448" width="323" height="37"/>
+                                <color key="backgroundColor" red="0.73197859525680542" green="0.9020048975944519" blue="0.93611633777618408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="mnT-Ss-WKH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="uj5-yR-WdJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="21"/>
                                 <state key="normal" title="Department">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="handleSelection:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="83F-1Z-gvU"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qI-sg-fYl">
-                                <rect key="frame" x="35" y="404" width="326" height="30"/>
-                                <color key="backgroundColor" red="0.79610359669999997" green="0.92548787590000003" blue="0.95523005719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYg-qn-F3o">
+                                <rect key="frame" x="35" y="493" width="323" height="31"/>
+                                <color key="backgroundColor" red="0.73197859525680542" green="0.9020048975944519" blue="0.93611633777618408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hPM-Oc-xNO"/>
-                                    <constraint firstAttribute="height" constant="30" id="p6H-cO-okr"/>
+                                    <constraint firstAttribute="height" constant="31" id="DC0-uu-UFK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="cGI-0t-Vzc"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
+                                <state key="normal" title="Admin">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="departmentTapped:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="lmy-4t-sqe"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0d-JX-6fA">
+                                <rect key="frame" x="35" y="532" width="323" height="31"/>
+                                <color key="backgroundColor" red="0.73197859525680542" green="0.9020048975944519" blue="0.93611633777618408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="4Kl-kq-4MA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="9Ht-4W-VBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <state key="normal" title="Marketing">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="departmentTapped:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="gDC-Di-dqR"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8H-9d-Snm">
+                                <rect key="frame" x="35" y="571" width="323" height="31"/>
+                                <color key="backgroundColor" red="0.73197859525680542" green="0.9020048975944519" blue="0.93611633777618408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="3ds-m2-B4h"/>
+                                    <constraint firstAttribute="height" constant="31" id="xku-mA-3M1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <state key="normal" title="IT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="departmentTapped:" destination="eZ5-s7-0BJ" eventType="touchUpInside" id="yU5-nL-kxp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="2qI-sg-fYl" secondAttribute="trailing" constant="53" id="1T2-A0-cBc"/>
-                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="2qI-sg-fYl" secondAttribute="trailing" constant="53" id="7xo-bp-dwK"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="kR2-jA-jAg" secondAttribute="trailing" constant="56" id="1CH-wb-58U"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="6m2-nj-xz2" secondAttribute="trailing" constant="56" id="1f5-XE-JT5"/>
+                            <constraint firstItem="mYg-qn-F3o" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="3XO-Ja-AvF"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="3wM-ij-7Rb"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="4cJ-14-yfo"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="leading" secondItem="Osq-Yg-tm3" secondAttribute="leading" constant="234" id="5jp-9X-4Qp"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="5pt-NT-jlm"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="mty-pl-nEt" secondAttribute="bottom" constant="20" id="5w0-MR-nci"/>
+                            <constraint firstItem="mYg-qn-F3o" firstAttribute="top" secondItem="kR2-jA-jAg" secondAttribute="bottom" constant="8" id="75B-Fz-Pv4"/>
+                            <constraint firstItem="Osq-Yg-tm3" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="921-Q3-cdh"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="top" secondItem="OFR-Ic-aX4" secondAttribute="top" constant="220" id="Aad-ZA-Q53"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="WgP-15-V6Y" secondAttribute="bottom" constant="91" id="Bk4-oa-13b"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="6m2-nj-xz2" secondAttribute="trailing" constant="56" id="C7y-eH-qep"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="D0G-gS-Mqf"/>
                             <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="mty-pl-nEt" secondAttribute="bottom" constant="20" id="D32-Ci-Cvp"/>
-                            <constraint firstItem="kR2-jA-jAg" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="42" id="DXK-H9-18M"/>
-                            <constraint firstItem="2qI-sg-fYl" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="EY8-CH-cCI"/>
-                            <constraint firstItem="kR2-jA-jAg" firstAttribute="top" secondItem="2qI-sg-fYl" secondAttribute="bottom" constant="22" id="GyT-q1-qmB"/>
-                            <constraint firstItem="kR2-jA-jAg" firstAttribute="top" secondItem="2qI-sg-fYl" secondAttribute="bottom" constant="22" id="Kiq-ml-2iQ"/>
-                            <constraint firstItem="PrV-mj-ejL" firstAttribute="top" secondItem="2qI-sg-fYl" secondAttribute="top" id="L3L-nV-cqr"/>
-                            <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="8ni-vm-UOB" secondAttribute="top" constant="308" id="L71-TJ-j9a"/>
+                            <constraint firstItem="2qI-sg-fYl" firstAttribute="top" secondItem="RWb-3F-eJe" secondAttribute="bottom" constant="16" id="De4-TT-7vN"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="mty-pl-nEt" secondAttribute="bottom" constant="20" id="EHP-Dm-xtb"/>
+                            <constraint firstItem="2qI-sg-fYl" firstAttribute="top" secondItem="RWb-3F-eJe" secondAttribute="bottom" constant="16" id="EKf-iG-R4S"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="X8H-9d-Snm" secondAttribute="trailing" constant="56" id="Hh1-dV-c65"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="I4m-Oe-b3B"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="JDN-6r-xkX"/>
+                            <constraint firstItem="mYg-qn-F3o" firstAttribute="top" secondItem="kR2-jA-jAg" secondAttribute="bottom" constant="8" id="JKE-Wk-XhG"/>
                             <constraint firstItem="RWb-3F-eJe" firstAttribute="trailing" secondItem="6m2-nj-xz2" secondAttribute="trailing" id="MoE-np-ogh"/>
-                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="WgP-15-V6Y" secondAttribute="bottom" constant="92" id="N3l-s1-lQp"/>
-                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="kR2-jA-jAg" secondAttribute="bottom" constant="180" id="QeA-O8-Sh2"/>
-                            <constraint firstItem="RWb-3F-eJe" firstAttribute="leading" secondItem="PrV-mj-ejL" secondAttribute="leading" id="TQb-F7-Ifm"/>
-                            <constraint firstItem="2qI-sg-fYl" firstAttribute="centerX" secondItem="WgP-15-V6Y" secondAttribute="centerX" constant="-5" id="Xxd-E9-t0k"/>
-                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kR2-jA-jAg" secondAttribute="trailing" symbolic="YES" id="aj0-qP-Y26"/>
-                            <constraint firstItem="RWb-3F-eJe" firstAttribute="centerX" secondItem="2qI-sg-fYl" secondAttribute="centerX" id="alk-co-Hfp"/>
-                            <constraint firstItem="RWb-3F-eJe" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" id="ayT-s6-2sv"/>
-                            <constraint firstItem="kR2-jA-jAg" firstAttribute="leading" secondItem="PrV-mj-ejL" secondAttribute="leading" constant="7" id="dnw-9J-syC"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="WgP-15-V6Y" secondAttribute="bottom" constant="91" id="N3l-s1-lQp"/>
+                            <constraint firstItem="2qI-sg-fYl" firstAttribute="leading" secondItem="RWb-3F-eJe" secondAttribute="leading" id="OMS-b3-rhq"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mYg-qn-F3o" secondAttribute="trailing" constant="56" id="Ppy-Nr-skQ"/>
+                            <constraint firstItem="RWb-3F-eJe" firstAttribute="top" secondItem="6m2-nj-xz2" secondAttribute="bottom" constant="20" id="Q1x-73-KEH"/>
+                            <constraint firstItem="X8H-9d-Snm" firstAttribute="top" secondItem="u0d-JX-6fA" secondAttribute="bottom" constant="8" id="SaM-Jq-4qd"/>
+                            <constraint firstItem="u0d-JX-6fA" firstAttribute="top" secondItem="mYg-qn-F3o" secondAttribute="bottom" constant="8" id="TIE-ea-oYV"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="Osq-Yg-tm3" secondAttribute="trailing" constant="277" id="UAA-ks-Elc"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="UUs-dz-Rcq"/>
+                            <constraint firstItem="u0d-JX-6fA" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="Ucn-AU-jR4"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="6m2-nj-xz2" secondAttribute="trailing" constant="56" id="Urp-G2-MiZ"/>
+                            <constraint firstItem="u0d-JX-6fA" firstAttribute="top" secondItem="mYg-qn-F3o" secondAttribute="bottom" constant="8" id="XBs-Io-OAu"/>
+                            <constraint firstItem="2qI-sg-fYl" firstAttribute="centerX" secondItem="WgP-15-V6Y" secondAttribute="centerX" constant="-117" id="Xxd-E9-t0k"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="mty-pl-nEt" secondAttribute="bottom" constant="20" id="Z6B-5K-TIy"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" constant="56" id="bt7-GE-qv5"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="d9a-F9-1UQ"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="RWb-3F-eJe" secondAttribute="trailing" constant="56" id="dA6-aX-PZB"/>
                             <constraint firstItem="RWb-3F-eJe" firstAttribute="leading" secondItem="6m2-nj-xz2" secondAttribute="leading" id="eQR-AQ-tEs"/>
-                            <constraint firstItem="RWb-3F-eJe" firstAttribute="leading" secondItem="mty-pl-nEt" secondAttribute="leading" id="g12-zy-MP7"/>
-                            <constraint firstItem="WgP-15-V6Y" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="132" id="izf-a3-ZC6"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="top" secondItem="mty-pl-nEt" secondAttribute="bottom" constant="20" id="eez-N6-0Di"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="top" secondItem="OFR-Ic-aX4" secondAttribute="top" constant="220" id="enP-w6-kBU"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="WgP-15-V6Y" secondAttribute="bottom" constant="91" id="fvl-lT-AdM"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" constant="56" id="glS-9q-eD0"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" constant="56" id="h6g-V1-jZe"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="jT8-gF-8pt"/>
                             <constraint firstItem="RWb-3F-eJe" firstAttribute="top" secondItem="6m2-nj-xz2" secondAttribute="bottom" constant="20" id="jhm-4l-Fij"/>
-                            <constraint firstItem="2qI-sg-fYl" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="vVF-Yc-Ayb"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="bottom" secondItem="WgP-15-V6Y" secondAttribute="bottom" constant="91" id="kkR-9r-OMd"/>
+                            <constraint firstItem="X8H-9d-Snm" firstAttribute="top" secondItem="u0d-JX-6fA" secondAttribute="bottom" constant="8" id="kzc-pj-9IB"/>
+                            <constraint firstItem="RWb-3F-eJe" firstAttribute="top" secondItem="6m2-nj-xz2" secondAttribute="bottom" constant="20" id="l53-fC-6Cj"/>
+                            <constraint firstItem="6m2-nj-xz2" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="mqJ-Gw-erp"/>
+                            <constraint firstItem="kR2-jA-jAg" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="nCL-ds-9Tx"/>
+                            <constraint firstItem="Osq-Yg-tm3" firstAttribute="top" secondItem="X8H-9d-Snm" secondAttribute="bottom" constant="133" id="nT7-iK-eRf"/>
+                            <constraint firstItem="WgP-15-V6Y" firstAttribute="top" secondItem="Osq-Yg-tm3" secondAttribute="bottom" constant="-36" id="qgc-MZ-HQE"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" constant="56" id="tBb-MV-Jfo"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="tvY-CT-9YR"/>
+                            <constraint firstItem="kR2-jA-jAg" firstAttribute="top" secondItem="2qI-sg-fYl" secondAttribute="bottom" constant="8" id="ukS-rt-LJg"/>
                             <constraint firstItem="2qI-sg-fYl" firstAttribute="top" secondItem="RWb-3F-eJe" secondAttribute="bottom" constant="16" id="vje-bX-aac"/>
+                            <constraint firstItem="X8H-9d-Snm" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="w8A-io-AVY"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="wSX-dG-WYf"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="top" secondItem="OFR-Ic-aX4" secondAttribute="top" constant="220" id="yCe-W3-8kT"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="u0d-JX-6fA" secondAttribute="trailing" constant="56" id="z3r-Mp-fXE"/>
+                            <constraint firstItem="OFR-Ic-aX4" firstAttribute="trailing" secondItem="mty-pl-nEt" secondAttribute="trailing" constant="56" id="z6h-81-lCB"/>
+                            <constraint firstItem="mty-pl-nEt" firstAttribute="leading" secondItem="OFR-Ic-aX4" secondAttribute="leading" constant="35" id="zpl-3Y-dnV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OFR-Ic-aX4"/>
                     </view>
                     <connections>
-                        <outlet property="email" destination="6m2-nj-xz2" id="eZe-BG-s8a"/>
+                        <outlet property="email" destination="6m2-nj-xz2" id="eTE-Nn-FkC"/>
+                        <outlet property="menuOutlet" destination="kR2-jA-jAg" id="jhx-gS-ifx"/>
                         <outlet property="password" destination="RWb-3F-eJe" id="jEE-nL-kFT"/>
                         <outlet property="passwordConfirm" destination="2qI-sg-fYl" id="1ey-af-TRV"/>
                         <outlet property="userName" destination="mty-pl-nEt" id="nT1-8Z-ko7"/>
-                        <segue destination="Pwy-Wd-O5S" kind="presentation" identifier="mainpage" id="RN3-wv-46u"/>
+                        <outlet property="view" destination="kR2-jA-jAg" id="PG5-IB-DMc"/>
+                        <outletCollection property="departmentCollection" destination="mYg-qn-F3o" collectionClass="NSMutableArray" id="j34-yz-u0R"/>
+                        <outletCollection property="departmentCollection" destination="u0d-JX-6fA" collectionClass="NSMutableArray" id="FJ7-Gn-AGH"/>
+                        <outletCollection property="departmentCollection" destination="X8H-9d-Snm" collectionClass="NSMutableArray" id="F15-PM-DP6"/>
+                        <segue destination="Pwy-Wd-O5S" kind="presentation" identifier="mainpage" id="JO5-Ly-AUU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNB-Yo-7CJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="-15"/>
+            <point key="canvasLocation" x="411.59420289855075" y="-15.401785714285714"/>
         </scene>
-        <!--Loginn View Controller-->
+        <!--Loginn-->
         <scene sceneID="Xu8-Tq-aQ0">
             <objects>
-                <viewController id="JCi-gy-gYT" customClass="LoginnViewController" customModule="Easy_Now" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" title="Loginn" id="JCi-gy-gYT" customClass="LoginnViewController" customModule="Easy_Now" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ek-qi-e9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -234,27 +423,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Esc-SU-nZh">
-                                <rect key="frame" x="38" y="339" width="335" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Esc-SU-nZh">
+                                <rect key="frame" x="38.5" y="339" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.59001332521438599" green="0.87454354763031006" blue="0.92573893070220947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i76-El-w2c"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="tpj-fo-jgX"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXY-go-yfc">
-                                <rect key="frame" x="38" y="412" width="342" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXY-go-yfc">
+                                <rect key="frame" x="38" y="412" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.74769401550000003" green="0.91776961089999998" blue="0.94773942229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="a0s-xi-Ax2"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-X3-CE9">
-                                <rect key="frame" x="162" y="591" width="86" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-X3-CE9">
+                                <rect key="frame" x="163" y="591" width="86" height="48"/>
                                 <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="30"/>
                                 <state key="normal" title="Log in ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,49 +454,94 @@
                                     <action selector="Login:" destination="JCi-gy-gYT" eventType="touchUpInside" id="gzI-mA-FUh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-oD-6Wi">
-                                <rect key="frame" x="20" y="694" width="268" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1ah-Gc-0x9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
-                                <state key="normal" title="Need an account? Register here">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eZ5-s7-0BJ" kind="presentation" id="Vhw-XZ-sDC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJk-rC-gLi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJk-rC-gLi">
                                 <rect key="frame" x="38" y="732" width="123" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="123" id="lbU-Gy-QWS"/>
                                     <constraint firstAttribute="height" constant="30" id="xi8-85-Trc"/>
                                 </constraints>
                                 <state key="normal" title="Forgot password?">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-oD-6Wi">
+                                <rect key="frame" x="38" y="694" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1ah-Gc-0x9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="eG8-GK-ViD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="p9N-c6-LHw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                                <state key="normal" title="Need an account? Register here">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eZ5-s7-0BJ" kind="presentation" identifier="registerpage" id="npq-aA-qJ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BXY-go-yfc" firstAttribute="top" secondItem="Esc-SU-nZh" secondAttribute="bottom" constant="43" id="1bw-Cm-3fa"/>
+                            <constraint firstItem="XmS-oD-6Wi" firstAttribute="leading" secondItem="2Ek-qi-e9J" secondAttribute="leadingMargin" constant="18" id="41j-Yx-8VV"/>
+                            <constraint firstItem="Esc-SU-nZh" firstAttribute="top" secondItem="g00-4R-lSs" secondAttribute="top" constant="295" id="7eb-54-QPe"/>
+                            <constraint firstItem="XmS-oD-6Wi" firstAttribute="top" secondItem="cPv-X3-CE9" secondAttribute="bottom" constant="55" id="7g2-b9-Ciz"/>
+                            <constraint firstItem="oJk-rC-gLi" firstAttribute="top" secondItem="XmS-oD-6Wi" secondAttribute="bottom" constant="8" id="9sN-k4-KGN"/>
                             <constraint firstAttribute="bottom" secondItem="XmS-oD-6Wi" secondAttribute="bottom" constant="172" id="BcO-1D-r7t"/>
+                            <constraint firstItem="oJk-rC-gLi" firstAttribute="leading" secondItem="BXY-go-yfc" secondAttribute="leading" id="Ihp-Ha-qKy"/>
+                            <constraint firstItem="oJk-rC-gLi" firstAttribute="top" secondItem="XmS-oD-6Wi" secondAttribute="bottom" constant="8" id="KwX-mM-sEl"/>
+                            <constraint firstItem="Esc-SU-nZh" firstAttribute="centerX" secondItem="cPv-X3-CE9" secondAttribute="centerX" id="MHS-d4-w7U"/>
+                            <constraint firstItem="oJk-rC-gLi" firstAttribute="top" secondItem="XmS-oD-6Wi" secondAttribute="bottom" constant="8" symbolic="YES" id="NXi-2P-bOh"/>
+                            <constraint firstItem="BXY-go-yfc" firstAttribute="top" secondItem="Esc-SU-nZh" secondAttribute="bottom" constant="43" id="Pvw-cl-sc4"/>
+                            <constraint firstItem="Esc-SU-nZh" firstAttribute="top" secondItem="g00-4R-lSs" secondAttribute="top" constant="295" id="REj-3N-1s1"/>
+                            <constraint firstItem="cPv-X3-CE9" firstAttribute="leading" secondItem="g00-4R-lSs" secondAttribute="leading" constant="163" id="Rs3-sG-hz6"/>
+                            <constraint firstItem="g00-4R-lSs" firstAttribute="trailing" secondItem="oJk-rC-gLi" secondAttribute="trailing" constant="253" id="W5O-GD-8zT"/>
+                            <constraint firstItem="oJk-rC-gLi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g00-4R-lSs" secondAttribute="leading" id="WJ1-JT-eQ4"/>
+                            <constraint firstItem="g00-4R-lSs" firstAttribute="trailing" secondItem="XmS-oD-6Wi" secondAttribute="trailing" constant="158" id="X5D-8d-RPG"/>
+                            <constraint firstItem="BXY-go-yfc" firstAttribute="leading" secondItem="g00-4R-lSs" secondAttribute="leading" constant="38" id="Y4c-L7-mS4"/>
+                            <constraint firstItem="g00-4R-lSs" firstAttribute="trailing" secondItem="BXY-go-yfc" secondAttribute="trailing" constant="41" id="Zlh-5P-sXu"/>
                             <constraint firstItem="BXY-go-yfc" firstAttribute="top" secondItem="2Ek-qi-e9J" secondAttribute="top" constant="412" id="gDE-Ng-6qy"/>
+                            <constraint firstItem="XmS-oD-6Wi" firstAttribute="top" secondItem="cPv-X3-CE9" secondAttribute="bottom" constant="55" id="kKh-Mf-haN"/>
+                            <constraint firstItem="XmS-oD-6Wi" firstAttribute="top" secondItem="cPv-X3-CE9" secondAttribute="bottom" constant="55" id="me1-Lf-4a7"/>
+                            <constraint firstItem="g00-4R-lSs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BXY-go-yfc" secondAttribute="trailing" symbolic="YES" id="oJc-PQ-g7I"/>
+                            <constraint firstItem="Esc-SU-nZh" firstAttribute="top" secondItem="g00-4R-lSs" secondAttribute="top" constant="295" id="pOp-Z3-mOl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g00-4R-lSs"/>
                     </view>
                     <connections>
-                        <outlet property="email" destination="Esc-SU-nZh" id="gTQ-Z1-EuE"/>
+                        <outlet property="email" destination="Esc-SU-nZh" id="pNA-iu-NXc"/>
                         <outlet property="password" destination="BXY-go-yfc" id="EX8-Ze-WJ1"/>
-                        <segue destination="Pwy-Wd-O5S" kind="presentation" identifier="mainpage" id="yaL-Tq-8sB"/>
+                        <segue destination="Pwy-Wd-O5S" kind="presentation" identifier="mainpage" id="wcy-Cu-qpE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgc-3J-dQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-974"/>
+            <point key="canvasLocation" x="485.50724637681162" y="-974.33035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cqq-Bq-Yc9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="wQM-70-ulx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xtr-ZC-P2c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hat-e8-II2" kind="relationship" relationship="rootViewController" id="PA1-nd-uq8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5E-1J-xrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4124.6376811594209" y="249.77678571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Hamburger menu" width="37.5" height="37.5"/>
         <image name="Main Page 3" width="414" height="736"/>
         <image name="imageView:pWd-yB-Ucp:highlightedImage" width="414" height="736">
             <mutableData key="keyedArchiveRepresentation">
@@ -402,7 +638,7 @@ E9MT1hPbE+MT5hP4E/sUAAAAAAAAAAIBAAAAAAAAAFcAAAAAAAAAAAAAAAAAABQCA
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yaL-Tq-8sB"/>
+        <segue reference="kM3-s4-4HG"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

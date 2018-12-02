@@ -1,0 +1,4 @@
+framework module VirgilCryptoApiImpl {
+  header "VirgilCryptoApiImpl-Swift.h"
+  requires objc
+}

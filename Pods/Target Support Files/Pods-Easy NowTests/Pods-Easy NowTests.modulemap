@@ -1,0 +1,6 @@
+framework module Pods_Easy_NowTests {
+  umbrella header "Pods-Easy NowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,129 +10,115 @@ import UIKit
 import Firebase
 
 
-class MainController: UIViewController{
+class MessagesController: UIViewController{
    
     let ref = Database.database().reference()
-   
+    
    //menu bar
     
 
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var menuButton: UIButton!
-    @IBAction func menuButtonPressed(_ sender: Any) {
+   @IBAction func menuButtonPressed(_ sender: Any) {
         
         if(menuView.isHidden == true){
             menuView.isHidden = false
         }else{
             menuView.isHidden = true
-        }
-    }
+       }
+   }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        
+         //NotificationCenter.default.addObserver(self, selector: #selector(showChatLogController), name: NSNotification.Name(rawValue: "showChatLogController"), object: nil)
+        
         if Auth.auth().currentUser?.uid == nil{
             logout()
-            
         }
         setuprofile()
         
-       
-    }// set the username in the label
+        
+    }
     @IBOutlet weak var usernameLabel: UILabel!
     
     func setuprofile(){
         if let uid = Auth.auth().currentUser?.uid{
-            
             ref.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
-                if let dict = snapshot.value as? [String: AnyObject]
+                if let dictionary = snapshot.value as? [String: AnyObject]
                 {
-                    self.usernameLabel.text = dict["Username"] as? String
-                    
-                    
+                    self.usernameLabel.text = dictionary["Username"] as? String
+                   
+                   
                 }
-            });print("Username")
+            });
             
-            
+          
         }
         
+   
     }
     
+    
+    
+
     //handle logout
-    @IBAction func logOut(_ sender: Any) {
-        logout()
-    }
-    func logout(){
+  @IBAction func logOut(_ sender: Any) {
+    logout()
+  }
+    
+  func logout(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let LoginnViewController = storyboard.instantiateViewController(withIdentifier: "login")
-        present(LoginnViewController, animated: true, completion: nil)
-    }
+      present(LoginnViewController, animated: true, completion: nil)
     
-   
-    @IBAction func newMessage(_ sender: Any) {
+   }
+
+    
+   @IBAction func newMessage(_ sender: Any) {
         handleNewMessage()
     }
     
+    
     func handleNewMessage(){
-    let newMessageController = NewMessageController()
+        let newMessageController = NewMessageController()
         newMessageController.messagesController = self
-        
-     //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-     // let NewMessageController = storyboard.instantiateViewController(withIdentifier: "newMessage")
-       // newMessageController.messagesController = self
-       let navController = UINavigationController(rootViewController: newMessageController)
+        let navController = UINavigationController(rootViewController: newMessageController)
         present(navController, animated: true, completion: nil)
+        
+    }
+ 
 
-    }
+    @objc func showChatLogController(_ user: User){
     
-    
-    
-    @IBAction func archivedMessages(_ sender: Any) {
-       // handleArchive(user: User)
-    }
-    
-    
-    func showChatLogController(_ user: User){
        
-        let chatLogController = ChatLogController()
-      
-       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  // let ChatLogController = storyboard.instantiateViewController(withIdentifier: "archivedMessage")
-        chatLogController.user = user
+  let chatLogController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
+      chatLogController.user = user
         let navController = UINavigationController(rootViewController: chatLogController)
         present(navController, animated: true, completion: nil)
-        
+        navigationController?.pushViewController(chatLogController, animated: true)
     }
     
-    
-    
-    @IBAction func Messages(_ sender: Any) {
-        seeMessages()
-    }
-    
-    func seeMessages(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let MessagesController = storyboard.instantiateViewController(withIdentifier: "messages")
-        let navController = UINavigationController(rootViewController: MessagesController)
-        present(navController, animated: true, completion: nil)
-      
-        
-    }
+
     
   
-    
+    @IBAction func oldMessage(_ sender: Any) {
+       displayoldMessages()
+    }
+    func displayoldMessages(){
+        
+        //let oldmessageController = OldMessagesController()
+       //oldmessageController.oldMessagesController = self
+       // OldMessagesController.oldMessagesController = self
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let OldMessagesController = storyboard.instantiateViewController(withIdentifier: "oldMessages")
+        present(OldMessagesController, animated: true, completion: nil)
+        //let navController = UINavigationController(rootViewController:  oldmessageController)
+       // present(navController, animated: true, completion: nil)
+    }
     
 }
-
-
-
-
-
-
-
-
-
 
 
 //hide the keyboard
@@ -141,7 +127,9 @@ extension MessagesController: UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
+ 
    
 }
+
 
 

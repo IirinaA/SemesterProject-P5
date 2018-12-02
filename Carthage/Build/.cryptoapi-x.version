@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "VirgilCryptoAPI",
+      "hash" : "b780389da65a01e86e5d37f41b2819fd79fa096fe55174e8a56c3b248842d039"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "VirgilCryptoAPI",
+      "hash" : "06629805b93165f558c0944081444eeb9af0e8b3e62964f29bd1409b0980640b"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "VirgilCryptoAPI",
+      "hash" : "868b2971b0f864836c17882731d345c67b9ae39c18f04aa5bc1573dad7430c9d"
+    }
+  ],
+  "commitish" : "1.0.3",
+  "iOS" : [
+    {
+      "name" : "VirgilCryptoAPI",
+      "hash" : "2d9e76ab12ca545d0b629c0614259c32d1f4c80297eb069896ecc119a81b5bcd"
+    }
+  ]
+}

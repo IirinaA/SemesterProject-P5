@@ -1,0 +1,592 @@
+BCSymbolMap Version: 2.0
+___clang_call_terminate
+-[VSCChunkCipher initializeCipher]
+-[VSCChunkCipher dealloc]
+-[VSCChunkCipher cipher]
+-[VSCChunkCipher encryptDataFromStream:toStream:error:]
+-[VSCChunkCipher encryptDataFromStream:toStream:preferredChunkSize:embedContentInfo:error:]
+-[VSCChunkCipher decryptFromStream:toStream:recipientId:privateKey:keyPassword:error:]
+-[VSCChunkCipher decryptFromStream:toStream:password:error:]
+__ZN6virgil6crypto17VirgilChunkCipherD1Ev
+__ZN6virgil6crypto17VirgilChunkCipherD0Ev
+__ZTSN6virgil6crypto16VirgilDataSourceE
+__ZTIN6virgil6crypto16VirgilDataSourceE
+__ZTSN6virgil6crypto14VirgilDataSinkE
+__ZTIN6virgil6crypto14VirgilDataSinkE
+__ZTSN6virgil6crypto17VirgilChunkCipherE
+__ZTIN6virgil6crypto17VirgilChunkCipherE
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCChunkCipher.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x
+vector<const unsigned char *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector
+~__vector_base
+deallocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory
+__libcpp_deallocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/new
+clear
+__destruct_at_end
+__construct_at_end<const unsigned char *>
+__construct_range_forward<const unsigned char *, unsigned char *>
+construct<unsigned char, const unsigned char &>
+__construct<unsigned char, const unsigned char &>
+distance<const unsigned char *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator
+__distance<const unsigned char *>
+__vector_base
+allocate
+__end_cap
+first
+__get
+__allocate
+vector
+__construct_at_end<unsigned char *>
+__construct_range_forward<unsigned char>
+size
+__append
+~__split_buffer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__split_buffer
+__swap_out_circular_buffer
+swap<unsigned char *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits
+__construct_backward<unsigned char>
+__construct_at_end
+__split_buffer
+construct<unsigned char>
+__construct<unsigned char>
+__recommend
+max<unsigned long>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
+max<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+operator()
+capacity
+~VirgilChunkCipher
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilChunkCipher.h
+~VSCChunkCipherDataSource
+~VSCChunkCipherDataSink
+~basic_string
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string
+__get_long_pointer
+__is_long
+~vector
+data
+__get_pointer
+__get_short_size
+__get_long_size
+basic_string
+__init
+assign
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string
+copy
+__set_short_size
+__set_long_size
+__set_long_cap
+__set_long_pointer
+__align_it<16>
+length
+__compressed_pair<true, void>
+__compressed_pair_elem
+VSCChunkCipherDataSink
+VSCChunkCipherDataSource
+VirgilChunkCipher
+isGood
+shrink_to_fit
+resize
+hasData
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCFoundationCommons.mm
+-[VSCPfsPublicKey initWithKey:]
+-[VSCPfsPublicKey isEmpty]
+-[VSCPfsPublicKey key]
+-[VSCPfsPublicKey dealloc]
+-[VSCPfsPublicKey cppPfsPublicKey]
+_OBJC_IVAR_$_VSCPfsPublicKey._cppPfsPublicKey
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsPublicKey.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsPublicKeyPrivate.h
+~VirgilPFSPublicKey
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSPublicKey.h
+-[VSCCipher initializeCipher]
+-[VSCCipher dealloc]
+-[VSCCipher cipher]
+-[VSCCipher encryptData:embedContentInfo:error:]
+-[VSCCipher decryptData:recipientId:privateKey:keyPassword:error:]
+-[VSCCipher decryptData:password:error:]
+__ZN6virgil6crypto12VirgilCipherD1Ev
+__ZN6virgil6crypto12VirgilCipherD0Ev
+__ZTSN6virgil6crypto12VirgilCipherE
+__ZTIN6virgil6crypto12VirgilCipherE
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCCipher.mm
+~VirgilCipher
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilCipher.h
+operator=
+__move_assign
+VirgilCipher
+-[VSCVirgilRandom initWithPersonalInfo:]
+-[VSCVirgilRandom randomizeWithBytesNum:]
+-[VSCVirgilRandom randomize]
+-[VSCVirgilRandom randomizeBetweenMin:andMax:]
+-[VSCVirgilRandom dealloc]
+-[VSCVirgilRandom random]
+-[VSCVirgilRandom setRandom:]
+_OBJC_IVAR_$_VSCVirgilRandom._random
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCVirgilRandom.mm
+-[VSCBaseCipher init]
+-[VSCBaseCipher initializeCipher]
+-[VSCBaseCipher cipher]
+-[VSCBaseCipher addKeyRecipient:publicKey:error:]
+-[VSCBaseCipher removeKeyRecipient:error:]
+-[VSCBaseCipher isKeyRecipientExists:]
+-[VSCBaseCipher addPasswordRecipient:error:]
+-[VSCBaseCipher removePasswordRecipient:error:]
+-[VSCBaseCipher removeAllRecipientsWithError:]
+-[VSCBaseCipher contentInfoWithError:]
+-[VSCBaseCipher setContentInfo:error:]
+-[VSCBaseCipher contentInfoSizeInData:error:]
+-[VSCBaseCipher setInt:forKey:error:]
+-[VSCBaseCipher intForKey:error:]
+-[VSCBaseCipher removeIntForKey:error:]
+-[VSCBaseCipher setString:forKey:error:]
+-[VSCBaseCipher stringForKey:error:]
+-[VSCBaseCipher removeStringForKey:error:]
+-[VSCBaseCipher setData:forKey:error:]
+-[VSCBaseCipher dataForKey:error:]
+-[VSCBaseCipher removeDataForKey:error:]
+-[VSCBaseCipher isEmptyCustomParametersWithError:]
+-[VSCBaseCipher clearCustomParametersWithError:]
+-[VSCBaseCipher llCipher]
+-[VSCBaseCipher setLlCipher:]
+_OBJC_IVAR_$_VSCBaseCipher._llCipher
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCBaseCipher.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Private/VSCBaseCipherPrivate.h
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCBaseCipher.h
+c_str
+-[VSCPfsPrivateKey initWithKey:password:]
+-[VSCPfsPrivateKey key]
+-[VSCPfsPrivateKey password]
+-[VSCPfsPrivateKey dealloc]
+-[VSCPfsPrivateKey cppPfsPrivateKey]
+_OBJC_IVAR_$_VSCPfsPrivateKey._cppPfsPrivateKey
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsPrivateKey.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsPrivateKeyPrivate.h
+-[VSCStreamSigner init]
+-[VSCStreamSigner initWithHash:]
+-[VSCStreamSigner dealloc]
+-[VSCStreamSigner signStreamData:privateKey:keyPassword:error:]
+-[VSCStreamSigner verifySignature:fromStream:publicKey:error:]
+-[VSCStreamSigner signer]
+-[VSCStreamSigner setSigner:]
+_OBJC_IVAR_$_VSCStreamSigner._signer
+__ZTSN6virgil6crypto18VirgilStreamSignerE
+__ZTIN6virgil6crypto18VirgilStreamSignerE
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCStreamSigner.mm
+~VirgilStreamSignerDataSource
+VirgilStreamSignerDataSource
+~VirgilStreamSigner
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilStreamSigner.h
+~VirgilSignerBase
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilSignerBase.h
+VirgilStreamSigner
+-[VSCPfsResponderPublicInfo initWithIdentityPublicKey:longTermPublicKey:oneTimePublicKey:]
+-[VSCPfsResponderPublicInfo identityPublicKey]
+-[VSCPfsResponderPublicInfo longTermPublicKey]
+-[VSCPfsResponderPublicInfo oneTimePublicKey]
+-[VSCPfsResponderPublicInfo dealloc]
+-[VSCPfsResponderPublicInfo cppPfsResponderPublicInfo]
+_OBJC_IVAR_$_VSCPfsResponderPublicInfo._cppPfsResponderPublicInfo
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsResponderPublicInfo.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsResponderPublicInfoPrivate.h
+~VirgilPFSResponderPublicInfo
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSResponderPublicInfo.h
+VirgilPFSPublicKey
+-[VSCTinyCipher initWithPackageSize:]
+-[VSCTinyCipher init]
+-[VSCTinyCipher dealloc]
+-[VSCTinyCipher resetWithError:]
+-[VSCTinyCipher encryptData:recipientPublicKey:error:]
+-[VSCTinyCipher encryptAndSignData:recipientPublicKey:senderPrivateKey:senderKeyPassword:error:]
+-[VSCTinyCipher packageCount]
+-[VSCTinyCipher packageAtIndex:error:]
+-[VSCTinyCipher addPackage:error:]
+-[VSCTinyCipher packagesAccumulated]
+-[VSCTinyCipher decryptWithRecipientPrivateKey:recipientKeyPassword:error:]
+-[VSCTinyCipher verifyAndDecryptWithSenderPublicKey:recipientPrivateKey:recipientKeyPassword:error:]
+-[VSCTinyCipher packageSize]
+-[VSCTinyCipher setPackageSize:]
+-[VSCTinyCipher tinyCipher]
+-[VSCTinyCipher setTinyCipher:]
+_OBJC_IVAR_$_VSCTinyCipher._tinyCipher
+_OBJC_IVAR_$_VSCTinyCipher._packageSize
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCTinyCipher.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCTinyCipher.h
+-[VSCPfsSession initWithSession:]
+-[VSCPfsSession initWithIdentifier:encryptionSecretKey:decryptionSecretKey:additionalData:]
+-[VSCPfsSession identifier]
+-[VSCPfsSession encryptionSecretKey]
+-[VSCPfsSession decryptionSecretKey]
+-[VSCPfsSession additionalData]
+-[VSCPfsSession dealloc]
+-[VSCPfsSession cppPfsSession]
+__ZN6virgil6crypto3pfs16VirgilPFSSessionC2ERKS2_
+_OBJC_IVAR_$_VSCPfsSession._cppPfsSession
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsSession.mm
+VirgilPFSSession
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSSession.h
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsSessionPrivate.h
+~VirgilPFSSession
++[VSCByteArrayUtils convertVirgilByteArrayFromData:]
++[VSCByteArrayUtils convertVirgilByteArrayFromString:]
++[VSCByteArrayUtils hexStringFromData:]
++[VSCByteArrayUtils dataFromHexString:]
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCByteArrayUtils.mm
+-[VSCPBKDF salt]
+-[VSCPBKDF iterations]
+-[VSCPBKDF algorithm]
+-[VSCPBKDF setAlgorithm:]
+-[VSCPBKDF hash]
+-[VSCPBKDF setHash:]
+-[VSCPBKDF initWithSalt:iterations:]
+-[VSCPBKDF init]
+-[VSCPBKDF dealloc]
+-[VSCPBKDF enableRecommendationsCheckWithError:]
+-[VSCPBKDF disableRecommendationsCheckWithError:]
+-[VSCPBKDF keyFromPassword:size:error:]
++[VSCPBKDF randomBytesOfSize:]
+-[VSCPBKDF pbkdf]
+-[VSCPBKDF setPbkdf:]
+_OBJC_IVAR_$_VSCPBKDF._pbkdf
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCPBKDF.mm
+-[VSCStreamCipher initializeCipher]
+-[VSCStreamCipher dealloc]
+-[VSCStreamCipher Cipher]
+-[VSCStreamCipher encryptDataFromStream:toStream:embedContentInfo:error:]
+-[VSCStreamCipher decryptFromStream:toStream:recipientId:privateKey:keyPassword:error:]
+-[VSCStreamCipher decryptFromStream:toStream:password:error:]
+__ZN6virgil6crypto18VirgilStreamCipherD1Ev
+__ZN6virgil6crypto18VirgilStreamCipherD0Ev
+__ZTSN6virgil6crypto18VirgilStreamCipherE
+__ZTIN6virgil6crypto18VirgilStreamCipherE
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCStreamCipher.mm
+~VirgilStreamCipher
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilStreamCipher.h
+~VSCStreamCipherDataSource
+~VSCStreamCipherDataSink
+VSCStreamCipherDataSink
+VSCStreamCipherDataSource
+VirgilStreamCipher
+-[VSCPfsEncryptedMessage initWithEncryptedMessage:]
+-[VSCPfsEncryptedMessage initWithSessionIdentifier:salt:cipherText:]
+-[VSCPfsEncryptedMessage sessionIdentifier]
+-[VSCPfsEncryptedMessage salt]
+-[VSCPfsEncryptedMessage cipherText]
+-[VSCPfsEncryptedMessage dealloc]
+-[VSCPfsEncryptedMessage cppPfsEncryptedMessage]
+_OBJC_IVAR_$_VSCPfsEncryptedMessage._cppPfsEncryptedMessage
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsEncryptedMessage.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsEncryptedMessagePrivate.h
+~VirgilPFSEncryptedMessage
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSEncryptedMessage.h
+VirgilPFSEncryptedMessage
+-[VSCPfsResponderPrivateInfo initWithIdentityPrivateKey:longTermPrivateKey:oneTimePrivateKey:]
+-[VSCPfsResponderPrivateInfo identityPrivateKey]
+-[VSCPfsResponderPrivateInfo longTermPrivateKey]
+-[VSCPfsResponderPrivateInfo oneTimePrivateKey]
+-[VSCPfsResponderPrivateInfo dealloc]
+-[VSCPfsResponderPrivateInfo cppPfsResponderPrivateInfo]
+__ZN6virgil6crypto3pfs19VirgilPFSPrivateKeyC2ERKS2_
+_OBJC_IVAR_$_VSCPfsResponderPrivateInfo._cppPfsResponderPrivateInfo
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsResponderPrivateInfo.mm
+VirgilPFSPrivateKey
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSPrivateKey.h
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsResponderPrivateInfoPrivate.h
+~VirgilPFSResponderPrivateInfo
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSResponderPrivateInfo.h
+-[VSCPfsInitiatorPrivateInfo initWithIdentityPrivateKey:ephemeralPrivateKey:]
+-[VSCPfsInitiatorPrivateInfo identityPrivateKey]
+-[VSCPfsInitiatorPrivateInfo ephemeralPrivateKey]
+-[VSCPfsInitiatorPrivateInfo dealloc]
+-[VSCPfsInitiatorPrivateInfo cppPfsInitiatorPrivateInfo]
+_OBJC_IVAR_$_VSCPfsInitiatorPrivateInfo._cppPfsInitiatorPrivateInfo
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsInitiatorPrivateInfo.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsInitiatorPrivateInfoPrivate.h
+~VirgilPFSInitiatorPrivateInfo
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSInitiatorPrivateInfo.h
+-[VSCHash initWithAlgorithm:]
+-[VSCHash dealloc]
+-[VSCHash convertVSCAlgorithmToCAlgorithm:]
+-[VSCHash hash:]
+-[VSCHash start]
+-[VSCHash updateWithData:]
+-[VSCHash finish]
+-[VSCHash hash]
+-[VSCHash setHash:]
+_OBJC_IVAR_$_VSCHash._hash
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCHash.mm
+-[VSCPfs init]
+-[VSCPfs startInitiatorSessionWithInitiatorPrivateInfo:respondrerPublicInfo:additionalData:]
+-[VSCPfs startResponderSessionWithResponderPrivateInfo:initiatorPublicInfo:additionalData:]
+-[VSCPfs encryptData:]
+-[VSCPfs decryptMessage:]
+-[VSCPfs session]
+-[VSCPfs setSession:]
+-[VSCPfs dealloc]
+-[VSCPfs cppPfs]
+__ZN6virgil6crypto3pfs9VirgilPFSD2Ev
+_OBJC_IVAR_$_VSCPfs._cppPfs
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfs.mm
+~shared_ptr
+__release_shared
+__libcpp_atomic_refcount_decrement<long>
+~VirgilPFS
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFS.h
+~VirgilOperationRandom
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/primitive/VirgilOperationRandom.h
+~unique_ptr
+reset
+~VirgilOperationDH
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/primitive/VirgilOperationDH.h
+~VirgilOperationKDF
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/primitive/VirgilOperationKDF.h
+~VirgilOperationCipher
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/primitive/VirgilOperationCipher.h
++[VSCKeyPair generateMultipleKeys:keyPairType:]
+-[VSCKeyPair initWithKeyPair:]
+-[VSCKeyPair initWithKeyPairType:password:]
+-[VSCKeyPair initWithKeyPairType:keyMaterial:password:]
+-[VSCKeyPair init]
+-[VSCKeyPair dealloc]
++[VSCKeyPair convertVSCKeyTypeToCType:]
+-[VSCKeyPair publicKey]
+-[VSCKeyPair privateKey]
++[VSCKeyPair extractPublicKeyFromPrivateKey:privateKeyPassword:]
++[VSCKeyPair encryptPrivateKey:privateKeyPassword:]
++[VSCKeyPair decryptPrivateKey:privateKeyPassword:]
++[VSCKeyPair isEncryptedPrivateKey:]
++[VSCKeyPair isPrivateKey:matchesPassword:]
++[VSCKeyPair isPublicKey:matchesPrivateKey:withPassword:]
++[VSCKeyPair resetPassword:toPassword:forPrivateKey:error:]
++[VSCKeyPair publicKeyToPEM:]
++[VSCKeyPair publicKeyToDER:]
++[VSCKeyPair privateKeyToPEM:]
++[VSCKeyPair privateKeyToDER:]
++[VSCKeyPair privateKeyToPEM:privateKeyPassword:]
++[VSCKeyPair privateKeyToDER:privateKeyPassword:]
+-[VSCKeyPair keyPair]
+-[VSCKeyPair setKeyPair:]
+_OBJC_IVAR_$_VSCKeyPair._keyPair
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCKeyPair.mm
+~VirgilKeyPair
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/foundation/../VirgilKeyPair.h
+VirgilKeyPair
+-[VSCSigner init]
+-[VSCSigner initWithHash:]
+-[VSCSigner dealloc]
+-[VSCSigner signData:privateKey:keyPassword:error:]
+-[VSCSigner verifySignature:data:publicKey:error:]
+-[VSCSigner signer]
+-[VSCSigner setSigner:]
+_OBJC_IVAR_$_VSCSigner._signer
+__ZTSN6virgil6crypto12VirgilSignerE
+__ZTIN6virgil6crypto12VirgilSignerE
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCSigner.mm
+~VirgilSigner
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/VirgilSigner.h
+VirgilSigner
+-[VSCPfsInitiatorPublicInfo initWithIdentityPublicKey:ephemeralPublicKey:]
+-[VSCPfsInitiatorPublicInfo identityPublicKey]
+-[VSCPfsInitiatorPublicInfo ephemeralPublicKey]
+-[VSCPfsInitiatorPublicInfo dealloc]
+-[VSCPfsInitiatorPublicInfo cppPfsInitiatorPublicInfo]
+_OBJC_IVAR_$_VSCPfsInitiatorPublicInfo._cppPfsInitiatorPublicInfo
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/VSCPfsInitiatorPublicInfo.mm
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/pfs/Private/VSCPfsInitiatorPublicInfoPrivate.h
+~VirgilPFSInitiatorPublicInfo
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/VSCCrypto.framework/Headers/pfs/VirgilPFSInitiatorPublicInfo.h
++[VSCVirgilVersion asNumber]
++[VSCVirgilVersion asString]
++[VSCVirgilVersion majorVersion]
++[VSCVirgilVersion minorVersion]
++[VSCVirgilVersion patchVersion]
++[VSCVirgilVersion fullName]
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/VSCVirgilVersion.mm
+_$S12VirgilCrypto0A11PythiaErrorOSQAASQ2eeoiySbx_xtFZTW
+_$S12VirgilCrypto0A11PythiaErrorOSHAASH9hashValueSivgTW
+_$S12VirgilCrypto0A11PythiaErrorOSHAASH4hash4intoys6HasherVz_tFTW
+_$S12VirgilCrypto0A11PythiaErrorOSYAASY8rawValuexSg03RawF0Qz_tcfCTW
+_$S12VirgilCrypto0A11PythiaErrorOSYAASY8rawValue03RawF0QzvgTW
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAsADP7_domainSSvgTW
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAsADP5_codeSivgTW
+_$S12VirgilCrypto0A11PythiaErrorOSHAASH9hashValueSivgTWTm
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAsADP9_userInfoyXlSgvgTW
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAsADP19_getEmbeddedNSErroryXlSgyFTW
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAadEP03_nsD6DomainSSvgZTW
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation021_ObjectiveCBridgeableD0AadEP15_bridgedNSErrorxSgSo0I0C_tcfCTW
+_$S12VirgilCrypto0A6PythiaC5blind8passwordAA11BlindResultC10Foundation4DataV_tKFTo
+_$S12VirgilCrypto0A6PythiaC7deblind19transformedPassword14blindingSecret10Foundation4DataVAI_AItKFTo
+_$S12VirgilCrypto0A6PythiaCACycfcTo
+_$S12VirgilCrypto0A6PythiaC5blind8passwordAA11BlindResultC10Foundation4DataV_tKFTf4xd_n
+_$S12VirgilCrypto0A6PythiaC7deblind19transformedPassword14blindingSecret10Foundation4DataVAI_AItKFTf4xxd_n
+_$S12VirgilCrypto0A11PythiaErrorOSHAAWI
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAAWI
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation021_ObjectiveCBridgeableD0AAWI
+_$S12VirgilCrypto0A11PythiaErrorOSHAAWITm
+___swift_memcpy8_8
+___swift_noop_void_return
+_$S12VirgilCrypto0A11PythiaErrorOwet
+_$S12VirgilCrypto0A11PythiaErrorOwst
+_$S12VirgilCrypto0A11PythiaErrorOwug
+_$S12VirgilCrypto0A11PythiaErrorOwup
+_$S12VirgilCrypto0A11PythiaErrorOwui
+_$S12VirgilCrypto0A6PythiaC14bindBufForRead33_D272C7373A15E967E0BB8409192CD1A2LL3buf4dataySpySo07pythia_P0VG_10Foundation4DataVtFZySPys5UInt8VGXEfU_TA
+_$SSPys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA
+_$S12VirgilCrypto0A6PythiaC15bindBufForWrite33_D272C7373A15E967E0BB8409192CD1A2LL3buf4size10Foundation4DataVSpySo07pythia_P0VG_SitFZySpys5UInt8VGXEfU_TA
+_$SSPys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA.11
+_$SSpys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA
+_$SSPys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA.25
+_$SSpys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA.33
+_$SSpys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA.41
+_$S12VirgilCrypto0A6PythiaC15bindBufForWrite33_D272C7373A15E967E0BB8409192CD1A2LL3buf4size10Foundation4DataVSpySo07pythia_P0VG_SitFZySpys5UInt8VGXEfU_TA.29
+_$S12VirgilCrypto0A6PythiaC15bindBufForWrite33_D272C7373A15E967E0BB8409192CD1A2LL3buf4size10Foundation4DataVSpySo07pythia_P0VG_SitFZySpys5UInt8VGXEfU_TA.37
+_$S12VirgilCrypto0A6PythiaC14bindBufForRead33_D272C7373A15E967E0BB8409192CD1A2LL3buf4dataySpySo07pythia_P0VG_10Foundation4DataVtFZySPys5UInt8VGXEfU_TA.7
+_$S12VirgilCrypto0A6PythiaC14bindBufForRead33_D272C7373A15E967E0BB8409192CD1A2LL3buf4dataySpySo07pythia_P0VG_10Foundation4DataVtFZySPys5UInt8VGXEfU_TA.21
+_$S12VirgilCrypto0A11PythiaErrorOAC10Foundation15_BridgedNSErrorAAWL
+_$S12VirgilCrypto0A11PythiaErrorOSQAAWp
+_$S12VirgilCrypto0A11PythiaErrorOSQAAWG
+_$S12VirgilCrypto0A11PythiaErrorOSQAAWr
+_$S12VirgilCrypto0A11PythiaErrorOSHAAWp
+_$S12VirgilCrypto0A11PythiaErrorOSHAAWG
+_$S12VirgilCrypto0A11PythiaErrorOACSQAAWL
+_$S12VirgilCrypto0A11PythiaErrorOSHAAWr
+_$S12VirgilCrypto0A11PythiaErrorOSYAAWp
+_$S12VirgilCrypto0A11PythiaErrorOSYAAWG
+_$S12VirgilCrypto0A11PythiaErrorOSYAAWr
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAWp
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAWG
+_$S12VirgilCrypto0A11PythiaErrorOs0D0AAWr
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAAWp
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAAWG
+_$S12VirgilCrypto0A11PythiaErrorOAC10Foundation021_ObjectiveCBridgeableD0AAWL
+_$S12VirgilCrypto0A11PythiaErrorOACSHAAWL
+_$S12VirgilCrypto0A11PythiaErrorOACSYAAWL
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation021_ObjectiveCBridgeableD0AAWp
+_$S12VirgilCrypto0A11PythiaErrorO10Foundation021_ObjectiveCBridgeableD0AAWG
+_$S12VirgilCrypto0A11PythiaErrorOACs0D0AAWL
+_$S12VirgilCrypto0A11PythiaErrorOWV
+_$S12VirgilCryptoMXM
+_$S12VirgilCrypto0A11PythiaErrorOMf
+_symbolic ____ 12VirgilCrypto0A11PythiaErrorO
+_$S12VirgilCrypto0A11PythiaErrorOMB
+_$S12VirgilCrypto0A6PythiaCML
+_$S12VirgilCrypto0A6PythiaCMf
+_symbolic ____ 12VirgilCrypto0A6PythiaC
+_symbolic So8NSObjectC
+_$S12VirgilCrypto0A6PythiaCMF
+__swift_FORCE_LOAD_$_swiftFoundation_$_VirgilCrypto
+__swift_FORCE_LOAD_$_swiftDarwin_$_VirgilCrypto
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_VirgilCrypto
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_VirgilCrypto
+__swift_FORCE_LOAD_$_swiftDispatch_$_VirgilCrypto
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_VirgilCrypto
+_symbolic SpySo10pythia_bufVG
+_symbolic 10Foundation4DataV
+_symbolic SPys5UInt8VGs5Error_pIgyzo_
+_symbolic Si
+_symbolic Spys5UInt8VGs5Error_pIgyzo_
+_symbolic 12VirgilCrypto0A11PythiaErrorO
+_symbolic $Ss16RawRepresentableP
+_$S12VirgilCrypto0A11PythiaErrorOSYAAMA
+___swift_reflection_version
+_symbolic So10pythia_bufV
+_$SSo10pythia_bufVMB
+_objc_classes
+Apple LLVM version 10.0.0 (clang-1000.11.45.1)
+-emit-bc /Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Pythia/VirgilPythia.swift /Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Pythia/BlindResult.swift -emit-module-path "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilCrypto.swiftmodule" -emit-module-doc-path "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilCrypto.swiftdoc" -serialize-diagnostics-path "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilCrypto tvOS-master.dia" -emit-objc-header-path "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilCrypto-Swift.h" -emit-dependencies-path "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilCrypto tvOS-master.d" -target arm64-apple-tvos9.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk -I "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos" -F "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos" -application-extension -g -import-underlying-module -module-cache-path /Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/ModuleCache.noindex -swift-version 4.2 -O -serialize-debugging-options -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/swift-overrides.hmap" -Xcc -iquote -Xcc "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/VirgilCrypto-generated-files.hmap" -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/VirgilCrypto-own-target-headers.hmap" -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/VirgilCrypto-all-non-framework-target-headers.hmap" -Xcc -ivfsoverlay -Xcc "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/all-product-headers.yaml" -Xcc -iquote -Xcc "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/VirgilCrypto-project-headers.hmap" -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/BuildProductsPath/Release-appletvos/include" -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/DerivedSources/arm64" -Xcc "-I/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/DerivedSources" -Xcc -ivfsoverlay -Xcc "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/unextended-module-overlay.yaml" -Xcc -working-directory/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x -module-name VirgilCrypto -num-threads 4 -o "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/VirgilPythia.bc" -o "/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/Objects-normal/arm64/BlindResult.bc" -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Pythia/VirgilPythia.swift
+objectdestroy.39
+<compiler-generated>
+objectdestroy.35
+objectdestroy.31
+objectdestroy.27
+objectdestroy.23
+objectdestroy.16
+$S12VirgilCrypto0A6PythiaC15bindBufForWrite33_D272C7373A15E967E0BB8409192CD1A2LL3buf4size10Foundation4DataVSpySo07pythia_P0VG_SitFZySpys5UInt8VGXEfU_TA
+$S12VirgilCrypto0A6PythiaC15bindBufForWrite33_D272C7373A15E967E0BB8409192CD1A2LL3buf4size10Foundation4DataVSpySo07pythia_P0VG_SitFZySpys5UInt8VGXEfU_
+VirgilPythia.swift
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Pythia
+objectdestroy.13
+objectdestroy.9
+$SSPys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TRTA
+$SSPys5UInt8VGs5Error_pIgyzo_ACytsAD_pIegyrzo_TR
+objectdestroy.2
+$S12VirgilCrypto0A6PythiaC14bindBufForRead33_D272C7373A15E967E0BB8409192CD1A2LL3buf4dataySpySo07pythia_P0VG_10Foundation4DataVtFZySPys5UInt8VGXEfU_TA
+$S12VirgilCrypto0A6PythiaC14bindBufForRead33_D272C7373A15E967E0BB8409192CD1A2LL3buf4dataySpySo07pythia_P0VG_10Foundation4DataVtFZySPys5UInt8VGXEfU_
+objectdestroy
+$S12VirgilCrypto0A11PythiaErrorOMa
+$S12VirgilCrypto0A11PythiaErrorOwui
+$S12VirgilCrypto0A11PythiaErrorOwup
+$S12VirgilCrypto0A11PythiaErrorOwug
+$S12VirgilCrypto0A11PythiaErrorOwst
+$S12VirgilCrypto0A11PythiaErrorOwet
+__swift_noop_void_return
+__swift_memcpy8_8
+$S12VirgilCrypto0A11PythiaErrorOSHAAWI
+$S12VirgilCrypto0A11PythiaErrorOACSQAAWl
+$S12VirgilCrypto0A11PythiaErrorOSQAAWa
+$S12VirgilCrypto0A11PythiaErrorO10Foundation021_ObjectiveCBridgeableD0AAWa
+$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAAWI
+$S12VirgilCrypto0A11PythiaErrorOACSYAAWl
+$S12VirgilCrypto0A11PythiaErrorOSYAAWa
+$S12VirgilCrypto0A11PythiaErrorOACSHAAWl
+$S12VirgilCrypto0A11PythiaErrorOSHAAWa
+$S12VirgilCrypto0A11PythiaErrorOAC10Foundation021_ObjectiveCBridgeableD0AAWl
+$S12VirgilCrypto0A11PythiaErrorOs0D0AAWa
+$S12VirgilCrypto0A6PythiaCMa
+deblind
+trim
+removeLast
+$S10Foundation4DataVSmAASm17_customRemoveLastySbSiFTW
+$S10Foundation4DataVSlAASl5countSivgTW
+$defer
+$S12VirgilCrypto0A11PythiaErrorOACs0D0AAWl
+bindBufForWrite
+bindBufForRead
+blind
+init
+BlindResult.swift
+deinit
+pointee.set
+$S12VirgilCrypto0A11PythiaErrorOAC10Foundation15_BridgedNSErrorAAWl
+$S12VirgilCrypto0A11PythiaErrorO10Foundation15_BridgedNSErrorAAWa
+_nsErrorDomain.get
+_getEmbeddedNSError
+_userInfo.get
+hashValue.get
+_domain.get
+rawValue.get
+hash
+combine
+$SSiSHsSH4hash4intoys6HasherVz_tFTW
+==
+$SSiSQsSQ2eeoiySbx_xtFZTW
+_$S12VirgilCrypto11BlindResultC15blindedPassword10Foundation4DataVvgTo
+_$S12VirgilCrypto11BlindResultC14blindingSecret10Foundation4DataVvgTo
+_$S12VirgilCrypto11BlindResultC15blindedPassword10Foundation4DataVvgToTm
+_$S12VirgilCrypto11BlindResultC15blindedPassword10Foundation4DataVvgTm
+_$S12VirgilCrypto11BlindResultCACycfcTo
+_$S12VirgilCrypto11BlindResultCfETo
+_$Ss25_unimplementedInitializer9className04initD04file4line6columns5NeverOs12StaticStringV_A2JS2utFySRys5UInt8VGXEfU0_yAMXEfU_Tf4xx_n
+_$S12VirgilCrypto11BlindResultCML
+_$S12VirgilCrypto11BlindResultCMf
+_symbolic ____ 12VirgilCrypto11BlindResultC
+_$S12VirgilCrypto11BlindResultCMF
+/Users/irinaioanaavadanei/Desktop/EasyNow/Carthage/Checkouts/virgil-foundation-x/VirgilCrypto/Source/Pythia/BlindResult.swift
+$S12VirgilCrypto11BlindResultCMa
+$Ss25_unimplementedInitializer9className04initD04file4line6columns5NeverOs12StaticStringV_A2JS2utFySRys5UInt8VGXEfU0_yAMXEfU_Tf4xx_n
+$Ss12StaticStringV14withUTF8BufferyxxSRys5UInt8VGXElFyt_Tgq5
+$SSRys5UInt8VGIgy_ACytIegyr_TR
+$Ss25_unimplementedInitializer9className04initD04file4line6columns5NeverOs12StaticStringV_A2JS2utFySRys5UInt8VGXEfU0_
+$Ss25_unimplementedInitializer9className04initD04file4line6columns5NeverOs12StaticStringV_A2JS2utFySRys5UInt8VGXEfU0_yAMXEfU_
+blindedPassword.get
+$S12VirgilCrypto11BlindResultC15blindedPassword10Foundation4DataVvgTo
+/Users/irinaioanaavadanei/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/virgil-foundation-x/3.2.1/Build/Intermediates.noindex/ArchiveIntermediates/VirgilCrypto tvOS/IntermediateBuildFilesPath/VirgilCrypto.build/Release-appletvos/VirgilCrypto tvOS.build/DerivedSources/VirgilCrypto_vers.c

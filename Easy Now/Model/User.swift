@@ -10,7 +10,18 @@ import UIKit
 
 class User: NSObject {
  //in this class we are saving the user references that will be displayes under the name in the tableview
-    var userName: String?
-    var department: String?
-    var email: String?
+     @objc var id: String?
+     @objc var Username: String?
+     @objc var department: String?
+     @objc var email: String?
+   
+    init(dictionary: [String: AnyObject]) {
+        self.Username = dictionary["Username"] as? String
+        self.email = dictionary["email"] as? String
+        self.department = dictionary["department"] as? String
+        self.id = dictionary["id"] as? String
+        
+    }
 }
+
+

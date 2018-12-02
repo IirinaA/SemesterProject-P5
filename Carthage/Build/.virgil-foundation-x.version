@@ -1,0 +1,59 @@
+{
+  "Mac" : [
+    {
+      "name" : "VirgilCrypto",
+      "hash" : "859d4906066b94c3e1b152c8076ac11a078a8a8367583155315bbddaa2d6d19f"
+    },
+    {
+      "name" : "VirgilCryptoApiImpl",
+      "hash" : "2b56c6fefd4bb92a8e21ec5005c26a650940a7a62cc4ee415008311a70e72e56"
+    },
+    {
+      "name" : "VSCCrypto",
+      "hash" : "f242edd277715528f019a2ce80d81527c3c195c35fa79477d52ae82680b3d36a"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "VirgilCrypto",
+      "hash" : "3f49a4639ae8495d803bae09c321d68cfbab5189da12450d52573703c26b8499"
+    },
+    {
+      "name" : "VirgilCryptoApiImpl",
+      "hash" : "ef07c83c32fba17f478cde18dec4eb259a9288a8b6947cc2cae85bda665b6dcf"
+    },
+    {
+      "name" : "VSCCrypto",
+      "hash" : "25d2df842eb14b2d07f1aee93025ead2fe8ee15f5cdf3ec5eaa864c96e076884"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "VirgilCrypto",
+      "hash" : "f9da8612eb3309345fc797f9769d136b9a609723a23a679aae4447346b8736fa"
+    },
+    {
+      "name" : "VirgilCryptoApiImpl",
+      "hash" : "7f679b20b37071717624917290a2f3be485b4febcf3650372e67de92a8270b11"
+    },
+    {
+      "name" : "VSCCrypto",
+      "hash" : "f6af572683f0ede868700c122fe14044b7665e53e86ff44419e4278a8443dd71"
+    }
+  ],
+  "commitish" : "3.2.1",
+  "iOS" : [
+    {
+      "name" : "VirgilCryptoApiImpl",
+      "hash" : "15deed94831ab1f7c396abf5613ae4344cef75defae7f102099978fcc0472bf3"
+    },
+    {
+      "name" : "VirgilCrypto",
+      "hash" : "774598be1b620e3a279e61645fd5bb29ea8b24fb032b20a02924561ecab92f31"
+    },
+    {
+      "name" : "VSCCrypto",
+      "hash" : "5d9f1efb6eec1702378e051746654bdc20c345fdf2273db9184b715000ee4fbd"
+    }
+  ]
+}

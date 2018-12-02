@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "VirgilSDK",
+      "hash" : "9b8deacdc7280a591ab20222c67c8d5b627a939a76d12113a0387fca0b777a43"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "VirgilSDK",
+      "hash" : "ca241e2270eb51d9eb253857fbe0dbaca79785793318f5453cbc9ba34f1b7eba"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "VirgilSDK",
+      "hash" : "861c526f3c596f7ecf9c38f532c0a2b3c64bdf78fe249e0e9d4f6861983c46bc"
+    }
+  ],
+  "commitish" : "5.5.0",
+  "iOS" : [
+    {
+      "name" : "VirgilSDK",
+      "hash" : "4c597b50165ad054e9deb35b225dbc02b9642be2cf4ebfdd7cd78c7bbab53d35"
+    }
+  ]
+}

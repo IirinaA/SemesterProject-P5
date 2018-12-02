@@ -7,84 +7,111 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import VirgilSDK
+import VirgilE3Kit
 
-class LoginnViewController: UITableViewController {
-
-    override func viewDidLoad() {
+class LoginnViewController: UIViewController {
+   
+    
+    var users = [User]()
+    var oldMessagesController: OldMessagesController!
+   
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBAction func needAnAccount(sender: AnyObject) {
+        self.performSegue(withIdentifier: "registerpage", sender: self)
+    }
+    
+    // Virgil-Firebase function URL
+//    let jwtEndpointURL = URL(string: "https://us-central1-easynow-p5.cloudfunctions.net/api.cloudfunctions.net/api///virgil-jwt")!
+//    let headers = ["Content-Type": "application/json",
+//                   "Authorization": "Bearer " + firebaseToken]
+//     //Callback function to retrieve JWT token from Firebase function
+//   let tokenCallback: EThree.RenewJwtCallback = { completion in
+//        let connection = HttpConnection()
+//    let request = Request(url: jwtEndpointURL,
+//                          method: .get,
+//                          headers: headers)
+//
+//        guard let jwtResponse = try? connection.send(request),
+//            let responseBody = jwtResponse.body,
+//            let json = try? JSONSerialization.jsonObject(with: responseBody, options: []) as? [String: Any],
+//            let jwtStr = json?["token"] as? String else {
+//                completion(nil, AppError.gettingJwtFailed)
+//                return
+//        }
+//
+//        completion(jwtStr, nil)
+//    }
+    
+    // Initialize EThree SDK with JWT token from Firebase Function
+//    EThree.initialize(tokenCallback) { (eThree, error) in
+//    if error == nil
+//    print("It worked")
+//    }
+//    
+    
+    @IBAction func Login(_ sender: Any) {
+    
+    
+    Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+    if error == nil{
+    self.performSegue(withIdentifier: "mainpage", sender: self)
+       
+    }
+    else{
+    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    
+    alertController.addAction(defaultAction)
+    self.present(alertController, animated: true, completion: nil)
+    }
+        
+      self.oldMessagesController?.specificMessages()
+    }
+    
+//        Auth.auth().addStateDidChangeListener { auth, user in
+//            if let user = user {
+//
+//                EThree.initialize(tokenCallback: tokenCallback) { eThree, error in
+//
+//                   // Bootstrap user
+//                   eThree.bootstrap(password: password) { error in
+//
+//                         //User private key loaded, ready to end-to-end encrypt!
+//                      //  (The SDK works with Firebase UIDs)
+//                       let usersToEncryptTo = [User]
+//
+//                        // Lookup destination user public keys
+//                        eThree.lookupPublicKeys(of: usersToEncryptTo) { foundKeys, errors in
+//                            guard errors.isEmpty else {
+//                                // Error handling here
+//                            }
+//
+       func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+      
+        
+        
+       
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+//                    }
+//               }
+//
+//            }
+//
+
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
+}
+}
+//    }
+//
+//}

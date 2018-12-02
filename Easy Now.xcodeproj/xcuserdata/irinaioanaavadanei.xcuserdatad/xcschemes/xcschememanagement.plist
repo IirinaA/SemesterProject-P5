@@ -7,7 +7,30 @@
 		<key>Easy Now.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>12</integer>
+		</dict>
+		<key>Easy Now.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F359D9912179DD2800075982</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F359D9A52179DD2800075982</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F359D9B02179DD2800075982</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
